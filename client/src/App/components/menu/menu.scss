@@ -1,0 +1,58 @@
+.menu {
+    display: flex;
+    width: 100vw;
+    img {
+        margin-top: 4vh;
+        margin-left: 4vw;
+    }
+    &_center {
+        width: 463px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 7vh;
+        margin-left: 27vw;
+        
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 190%;
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+    } 
+    &_rechts {
+        margin-left: 22vw;
+        display: flex;
+        width: 12vw;
+        margin-top: 7vh;
+        justify-content: space-between;
+
+        font-family: Inter;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 190%; /* 28.5px */
+        letter-spacing: 0.75px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: #FFF;
+        }
+        &_signup {
+            margin-top: -1vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 122px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 49px;
+            border: 2px solid var(--others-red, #E03F3F);
+            background: var(--others-red, #E03F3F);
+        }
+    }
+}

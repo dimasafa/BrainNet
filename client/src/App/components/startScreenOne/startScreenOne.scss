@@ -1,0 +1,75 @@
+.startScreenOne {
+    background: url('../../sources/Page_01/02_start/BG.png') center top no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    margin-top: -16vh;
+    &_content {
+        padding-top: 70vh;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        &_first {
+            display: block;
+            margin: 0 auto;
+            display: flex;
+            width: 240px;
+            height: 24px;
+            flex-shrink: 0;
+            border: 2px solid #E03F3F;
+            border-radius: 15px;
+            justify-content: center;
+            align-items:center;
+            &_text {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 0.3px;
+                margin-right: 10px;
+            }
+        }
+        &_second {
+            color: #FFF;
+            text-align: center;
+            font-family: Inter;
+            font-size: 73px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 92px;
+            padding-top: 20px;
+        }
+        &_third {
+            width: 952px;
+            height: 84px;
+            margin-top: 73px;
+            flex-shrink: 0;
+            color: #B6C4CA;
+            text-align: center;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        &_forth {
+            padding-top: 15vh;
+            &_text {
+                color: #FFF;
+                text-align: center;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 190%;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                transform: rotate(299grad);
+                margin-bottom: 50px;
+            }
+        }
+    }
+}
