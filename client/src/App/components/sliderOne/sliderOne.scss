@@ -87,8 +87,26 @@
             margin-bottom: 55px;
         }
         &_last {
+            position: relative;
             img {
                 width: 8vw;
+            }
+            &_blur {
+                cursor: pointer;
+                width: 180px;
+                height: 43px;
+                position: absolute;
+    
+                left: -1vw;
+                top: -1vh;
+                z-index: 5;
+                &:hover {
+                    border-radius: 49px;
+                    opacity: 0.5;
+                    background: #E03F3F;
+                    filter: blur(20px);
+                    transition: all 0.3s;
+                }
             }
         }
     }

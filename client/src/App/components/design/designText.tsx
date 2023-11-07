@@ -1,0 +1,7 @@
+export const firstArray = ['Design without limits', 'Design without limits', "See what’s inside our studio", ' Experience our maps', 'Tell us what to explore'];
+
+export const headersArray = ['Design', 'Navigation', 'Studio', 'Maps', 'Search'];
+
+export const textArray = ['Style your map with lines, polygons, labels, icons, patterns, extrusions, raster & terrain with hundreds of options and a powerful expression language, not only controlling all visual aspects through the zoom range but having the freedom to change them at any time dynamically.', 'Inletsky provides powerful routing engines, accurate, traffic-powered travel times, and intuitive turn-by-turn directions to help you build engaging navigation experiences.', 'Inletsky Studio is like Photoshop, for maps. We give designers control over everything from colors and fonts, to 3D features and camera angles, to the pitch of the map as a car enters a turn.', 'Our APIs, SDKs, and live updating map data give developers tools to build better mapping, navigation, and search experiences across platforms.', 'Search and geocoding is tied to everything we build — maps, navigation, AR — and underlies every app that helps humans explore their world.'];
+
+export const lastArray = ['earn more about design  →', 'more about navigate  →', 'know more about design  →', 'more about maps  →', 'discover search  →'];

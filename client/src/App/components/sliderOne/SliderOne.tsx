@@ -7,11 +7,6 @@ import sliderThree from '../../sources/Page_01/03_slider/bild_03.png';
 import arrow from '../../sources/Page_01/03_slider/arrow.svg';
 import explore from '../../sources/Page_01/03_slider/ExploreMore.svg';
 
-
-
-
-
-
 const SliderOne:React.FC = () => {
 
     const [activeSlide, setActiveSlide] = useState(sliderOne);
@@ -22,8 +17,9 @@ const SliderOne:React.FC = () => {
     const [activeSecondText, setActiveSecondText] = useState('3D Networking');
     const [activeThirdText, setActiveThirdText] = useState('GL JS is engineered to render even the most detailed, feature-dense maps at 60 FPS on both desktop and mobile devices.');
 
-    const slideTransition = {
-        transition: 'transform 0.9s ease',
+    const handleDivClick = () => {
+        // Перенаправление на URL ссылки
+        window.location.href = '#';
     };
 
     function nachLinks() {
@@ -72,7 +68,7 @@ const SliderOne:React.FC = () => {
             setRightSlide(sliderTwo);
 
             setActiveFirstText('Navigation');
-            setActiveSecondText('Enhanced Performance"');
+            setActiveSecondText('Enhanced Performance');
             setActiveThirdText('Experience seamless navigation like never before. Our 3D Networking technology ensures smooth and efficient map rendering on all your devices, providing a top-notch user experience.');
         }
         else if (activeSlide === sliderThree) {
@@ -110,6 +106,7 @@ const SliderOne:React.FC = () => {
                 <a href="#">
                     <div className="sliderOne_content_last">
                         <img src={explore} alt="button" />
+                        <div className="sliderOne_content_last_blur" onClick={handleDivClick}></div>
                     </div>
                 </a>
 

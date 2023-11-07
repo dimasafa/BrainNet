@@ -16,7 +16,9 @@ const Menu:React.FC = () => {
                 </div>
                 <div className="menu_rechts">
                     <a href="#">login</a>
+                    <div className="menu_rechts_blur"></div>
                     <a className="menu_rechts_signup" href="#">signup</a>
+                    <div className="menu_rechts_blurtwo"></div>
                 </div>
             </div>
         </>

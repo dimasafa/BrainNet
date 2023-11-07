@@ -1,0 +1,35 @@
+.footer {
+    // background-color: #021530;
+    background-color: #9e1c17;
+    &_firstBlock {
+        display: flex;
+        img {
+            margin-left: 50px;
+            margin-top: 244px;
+        }
+        &_column {
+            margin: 150px;
+            display: flex;
+            width: 60vw;
+            justify-content: space-between;
+            &_one, &_two, &_three, &_four {
+                &_title {
+                    color: #E2E7EE;
+                    font-family: Inter;
+                    font-size: 11px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 22.4px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+                &_linkbox {
+                    display: block;
+                    a {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

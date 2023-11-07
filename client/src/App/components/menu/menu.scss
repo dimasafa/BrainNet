@@ -1,6 +1,7 @@
 .menu {
     display: flex;
     width: 100vw;
+    background-color: #492424;
     img {
         margin-top: 4vh;
         margin-left: 4vw;
@@ -25,6 +26,7 @@
         }
     } 
     &_rechts {
+        position: relative;
         margin-left: 22vw;
         display: flex;
         width: 12vw;
@@ -35,9 +37,27 @@
         font-size: 15px;
         font-style: normal;
         font-weight: 500;
-        line-height: 190%; /* 28.5px */
+        line-height: 190%;
         letter-spacing: 0.75px;
         text-transform: uppercase;
+        &_blur {
+            cursor: pointer;
+            width: 80px;
+            height: 43px;
+            position: absolute;
+
+            left: -1vw;
+            top: -0.5vh;
+            z-index: 5;
+            &:hover {
+                border-radius: 49px;
+                opacity: 0.5;
+                background: #E03F3F;
+                filter: blur(20px);
+                transition: all 0.3s;
+            }
+        }
+
         a {
             text-decoration: none;
             color: #FFF;
@@ -51,8 +71,24 @@
             height: 43px;
             flex-shrink: 0;
             border-radius: 49px;
-            border: 2px solid var(--others-red, #E03F3F);
-            background: var(--others-red, #E03F3F);
+            border: 2px solid #E03F3F;
+            background: #E03F3F;
+        }
+        &_blurtwo {
+            cursor: pointer;
+            width: 122px;
+            height: 43px;
+            position: absolute;
+            right: 0;
+            top: -1vh;
+            z-index: 5;
+            &:hover {
+                border-radius: 49px;
+                opacity: 0.5;
+                background: #E03F3F;
+                filter: blur(20px);
+                transition: all 0.3s;
+            }
         }
     }
 }
