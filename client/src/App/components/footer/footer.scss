@@ -1,14 +1,19 @@
 .footer {
     // background-color: #021530;
-    background-color: #9e1c17;
+    background-color: rgb(2, 20, 9);
     &_firstBlock {
+        display: block;
+        margin: 0 auto;
         display: flex;
+        border-top: 1px solid #2E2E46;
+        width: 80vw;
+        justify-content: space-between;
         img {
-            margin-left: 50px;
-            margin-top: 244px;
+            margin-top: 50px;
         }
         &_column {
-            margin: 150px;
+            margin-left: 170px;
+            padding-top: 61px;
             display: flex;
             width: 60vw;
             justify-content: space-between;
@@ -25,9 +30,66 @@
                 }
                 &_linkbox {
                     display: block;
+                    margin-top: 22px;
                     a {
+                        text-decoration: none;
                         display: block;
+                        color: #A0AABA;
+                        font-family: Inter;
+                        font-size: 11px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 22.4px;
+                        letter-spacing: -0.14px;
+                        margin-bottom: 3px;
+                        &:hover {
+                            color: #fff;
+                        }
+                        &:active {
+                            color: #E03F3F;
+                        }
                     }
+                }
+            }
+        }
+    }
+    &_secondBlock {
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        width: 80vw;
+        justify-content: space-between;
+        margin-top: 41px;
+        &_links {
+            a {
+                text-decoration: none;
+                color: #9BA2B2;
+                font-family: Inter;
+                font-size: 11px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 22.4px;
+                letter-spacing: -0.14px;
+                margin-right: 24px;
+                &:hover {
+                    color: #fff;
+                }
+                &:active {
+                    color: #E03F3F;
+                }
+            }
+        }
+        &_rechts {
+            width: 20vw;
+            display: flex;
+            justify-content: space-between;
+            svg {
+                transform: scale(1.2);
+                cursor: pointer;
+                fill: #8E9CA1;
+                &:hover {
+                    transition: all 0.3s;
+                    fill: #E03F3F;
                 }
             }
         }

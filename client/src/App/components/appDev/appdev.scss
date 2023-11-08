@@ -1,0 +1,89 @@
+.appdev {
+    display: block;
+    margin: 0 auto;
+    height: 447px;
+    width: 80vw;
+    background: url('../../sources/Page_02/05_app/bg.png') center center/cover no-repeat;
+    border-radius: 20px;
+    &_line {
+        display: block;
+        height: 0.5px;
+    }
+    &_first {
+        display: block;
+        margin: 0 auto;
+        display: flex;
+        width: 242px;
+        height: 24px;
+        border: 2px solid #E03F3F;
+        border-radius: 15px;
+        align-items: center;
+        margin-top: 70px;
+        &_rund {
+            display: block;
+            width: 7.397px;
+            height: 7.397px;
+            background-color: #E03F3F;
+            margin-right: 10%;
+            margin-left: 7%;
+            border-radius: 50%;
+        }
+        &_text {
+            color: #FFF;
+            font-family: Inter;
+            font-size: 10px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 0.3px;
+        }
+    }
+    &_header {
+        color:#FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 73px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 92px;
+        margin-top: 18px;
+    }
+    &_text {
+        color: #9BA2B2;
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 32px;
+        letter-spacing: -0.14px;
+        margin-top: 50px;
+    }
+    &_button {
+        
+        button {
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 510px;
+            height: 43px;
+            flex-shrink: 0;
+            border-radius: 49px;
+            border: 2px solid #E03F3F;
+            background: #E03F3F;
+
+            color: #FFF;
+            font-family: Inter;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 190%;
+            letter-spacing: 0.75px;
+            text-transform: uppercase;
+            &:active {
+                box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+            }
+        }
+    }
+}

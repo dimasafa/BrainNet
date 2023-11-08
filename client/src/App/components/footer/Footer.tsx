@@ -1,13 +1,18 @@
 import './footer.scss';
 import '../../../font/fonts.css';
-import './footerLogo';
-import { logoArray } from './footerLogo';
+import logo from '../../sources/Page_01/10_bottom/logo_gross.svg';
+
+import { ReactComponent as LogoOne } from '../../sources/Page_01/10_bottom/logo_01.svg';
+import { ReactComponent as LogoTwo } from '../../sources/Page_01/10_bottom/logo_02.svg';
+import { ReactComponent as LogoThree } from '../../sources/Page_01/10_bottom/logo_03.svg';
+import { ReactComponent as LogoFour } from '../../sources/Page_01/10_bottom/logo_04.svg';
+import { ReactComponent as LogoFive } from '../../sources/Page_01/10_bottom/logo_05.svg';
 
 const Footer:React.FC = () => {
     return (
         <div className="footer">
             <div className="footer_firstBlock">
-                <img src={logoArray[0]} alt="logo" />
+                <img src={logo} alt="logo" />
                 <div className="footer_firstBlock_column">
                     <div className="footer_firstBlock_column_one">
                         <div className="footer_firstBlock_column_one_title">Products</div>
@@ -72,11 +77,11 @@ const Footer:React.FC = () => {
                     <a href="#">Security</a>
                 </div>
                 <div className="footer_secondBlock_rechts">
-                    <img src={logoArray[1]} alt="logo1" />
-                    <img src={logoArray[2]} alt="logo2" />
-                    <img src={logoArray[3]} alt="logo3" />
-                    <img src={logoArray[4]} alt="logo4" />
-                    <img src={logoArray[5]} alt="logo5" />
+                    <LogoOne />
+                    <LogoTwo />
+                    <LogoThree />
+                    <LogoFour />
+                    <LogoFive />
                 </div>
             </div>
         </div>

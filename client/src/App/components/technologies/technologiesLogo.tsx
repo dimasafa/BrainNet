@@ -1,0 +1,23 @@
+import logo01 from '../../sources/Page_02/03_technologies/logo_01.svg';
+import logo02 from '../../sources/Page_02/03_technologies/logo_02.svg';
+import logo03 from '../../sources/Page_02/03_technologies/logo_03.svg';
+import logo04 from '../../sources/Page_02/03_technologies/logo_04.svg';
+import logo05 from '../../sources/Page_02/03_technologies/logo_05.svg';
+import logo06 from '../../sources/Page_02/03_technologies/logo_06.svg';
+import logo07 from '../../sources/Page_02/03_technologies/logo_07.svg';
+import logo08 from '../../sources/Page_02/03_technologies/logo_08.svg';
+import logo09 from '../../sources/Page_02/03_technologies/logo_09.svg';
+import logo10 from '../../sources/Page_02/03_technologies/logo_10.svg';
+import logo11 from '../../sources/Page_02/03_technologies/logo_11.svg';
+import logo12 from '../../sources/Page_02/03_technologies/logo_12.svg';
+import logo13 from '../../sources/Page_02/03_technologies/logo_13.svg';
+import logo14 from '../../sources/Page_02/03_technologies/logo_14.svg';
+import logo15 from '../../sources/Page_02/03_technologies/logo_15.svg';
+import logo16 from '../../sources/Page_02/03_technologies/logo_16.svg';
+import logo17 from '../../sources/Page_02/03_technologies/logo_17.svg';
+import logo18 from '../../sources/Page_02/03_technologies/logo_18.svg';
+import logo19 from '../../sources/Page_02/03_technologies/logo_19.svg';
+import logo20 from '../../sources/Page_02/03_technologies/logo_20.svg';
+import logo21 from '../../sources/Page_02/03_technologies/logo_21.svg';
+
+export const techLogoArray = [logo01, logo02, logo03, logo04, logo05, logo06, logo07, logo08, logo09, logo10, logo11, logo12, logo13, logo14, logo15, logo16, logo17, logo18, logo19, logo20, logo21];
