@@ -15,7 +15,6 @@ const startScreenOne:React.FC = () => {
                 <div className="startScreenOne_content_second">BrainNet. GL JS</div>
                 <div className="startScreenOne_content_third">BrainNet. GL JS is a Networking library for vector networking on  the Web. Its performance, real-time styling, and interactivity features set the bar for anyone building fast, immersive tech on the web.</div>
                 <div className="startScreenOne_content_forth">
-
                     <div className="startScreenOne_content_forth_text">Explore Now</div>
                     <img src={arrow} alt="arrow" />
                 </div>

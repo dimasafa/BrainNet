@@ -1,0 +1,106 @@
+.reach {
+    display: block;
+    margin: 0 auto;
+    width: 90vw;
+    background-color: #021530;
+    padding-top: 50px;
+
+    &_content {
+        display: block;
+        height: 447px;
+        width: 100%;
+        border-radius: 25px;
+        background: rgba(26, 45, 71, 0.30);
+
+        backdrop-filter: blur(20px);
+        &_line {
+            display: block;
+            width: 0.5px;
+            height: 0.5px;
+        }
+        &_first {
+            display: block;
+            margin: 0 auto;
+            display: flex;
+            width: 240px;
+            height: 24px;
+            border: 2px solid #E03F3F;
+            border-radius: 15px;
+            align-items: center;
+            margin-top: 70px;
+            &_rund {
+                display: block;
+                width: 7.397px;
+                height: 7.397px;
+                background-color: #E03F3F;
+                margin-right: 10%;
+                margin-left: 7%;
+                border-radius: 50%;
+            }
+            &_text {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 10px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 100%;
+                letter-spacing: 0.3px;
+                
+            }
+        }
+        &_header {
+            margin-top: 18px;
+            color: #FFF;
+            font-family: Inter;
+            font-size: 73px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 92px;
+            text-align: center;
+        }
+        &_text {
+            display: block;
+            margin: 0 auto;
+            width: 746px;
+            margin-top: 18px;
+            color: #9BA2B2;
+            font-family: Inter;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: -0.14px;
+            text-align: center;
+        }
+        &_btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            
+            button {
+                cursor: pointer;
+                width: 276px;
+                height: 43px;
+                flex-shrink: 0;
+                border-radius: 49px;
+                border: 2px solid #E03F3F;
+                background: #E03F3F;
+
+                color: #FFF;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 190%;
+                letter-spacing: 0.75px;
+                text-transform: uppercase;
+                &:hover {
+                    border-radius: 49px;
+                    opacity: 0.9;
+                    background:  #E03F3F;
+                    transition: all 0.3s;
+                }
+            }
+        }
+    }
+}
