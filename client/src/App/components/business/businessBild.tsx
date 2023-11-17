@@ -1,0 +1,11 @@
+import bild01 from '../../sources/Page_02/04_scope/logo_01.svg';
+import bild02 from '../../sources/Page_02/04_scope/logo_02.svg';
+import bild03 from '../../sources/Page_02/04_scope/logo_03.svg';
+import bild04 from '../../sources/Page_02/04_scope/logo_04.svg';
+import bild05 from '../../sources/Page_02/04_scope/logo_05.svg';
+
+export const scopeBildArray = [bild01, bild02, bild03, bild04, bild05];
+
+export const scopeHeaderArray = ['Security by Default', 'Managed Multi Cloud', 'Virtual Data Centre', 'Cloud Migration', 'Security by Default'];
+
+export const scopeTextArray = ['At Inletsky, security is built into all our services and solutions by default. Our Managed IT Security Services experts will ensure you have complete control and confidence in the integrity of your data and the efficacy of your security systems, procedures, and protocols.', 'Inletsky Managed Multi-cloud service ensures you always get the best performing architecture for your applications and workloads. Understanding how and where your business is using its application and services allows us to align your cloud IT solutions with your business operations to risk, complexity, and cost.', "As an experienced Hybrid and Multi-Cloud solution provider, we’ll provision and de-provision resources in response to your changing needs. To ensure you get the ongoing support you need, our co-managed environment allows your IT teams to collaborate with our local Inletsky engineers as if Inletsky was an extension of your own data center. This is a fully flexible service based on your internal capabilities and capacity.", "Because you need to be able to respond to changing market conditions, as part of Inletsky Hybrid and Multi-cloud solutions, we also deliver Cloud Migration solutions to enable a speedy and efficient platform migration and modernization. Our Cloud Services team can migrate different types of platforms to keep them updated and operating at peak performance. This includes your Public Cloud migrations to AWS and Azure.", "At Inletsky, security is built into all our services and solutions by default. Our Managed IT Security Services experts will ensure you have complete control and confidence in the integrity of your data and the efficacy of your security systems, procedures, and protocols."];

@@ -28,6 +28,8 @@ import Ai from './components/ai/Ai';
 import Reach from './components/reach/Reach';
 import StartScreenFour from './components/startScrenFour/startScreenFour';
 import Cost from './components/cost/Cost';
+import Business from './components/business/Business';
+import TwoBild from './components/twoBild/TwoBild';
 
 import { sliderBildArray, sliderFirstTextArray, sliderSecondTextArray, sliderThirdTextArray } from './components/slider/sliderData';
 
@@ -36,9 +38,13 @@ const App = () => {
     <>
       {/* <Menu />
       <StartScreenOne /> */}
-      {/* <Slider image01={sliderBildArray[0]} firstText01={sliderFirstTextArray[0]} secondText01={sliderSecondTextArray[0]} thirdText01={sliderThirdTextArray[0]} image02={sliderBildArray[1]} firstText02={sliderFirstTextArray[1]} secondText02={sliderSecondTextArray[1]} thirdText02={sliderThirdTextArray[1]} image03={sliderBildArray[2]} firstText03={sliderFirstTextArray[2]} secondText03={sliderSecondTextArray[2]} thirdText03={sliderThirdTextArray[2]}/> */}
-      <Cost />
-    </>
+      {/* <SliderThreeVorlage />
+      <Slider 
+      image01={sliderBildArray[6]} firstText01={sliderFirstTextArray[0]} secondText01={sliderSecondTextArray[6]} thirdText01={sliderThirdTextArray[6]} 
+      image02={sliderBildArray[7]} firstText02={sliderFirstTextArray[1]} secondText02={sliderSecondTextArray[7]} thirdText02={sliderThirdTextArray[7]} 
+      image03={sliderBildArray[8]} firstText03={sliderFirstTextArray[2]} secondText03={sliderSecondTextArray[8]} thirdText03={sliderThirdTextArray[8]}/> */}
+      <TwoBild />
+      </>
   );
 }
 

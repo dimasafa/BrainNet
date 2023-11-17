@@ -1,0 +1,58 @@
+.twoBild {
+    display: block;
+    margin: 0 auto;
+    width: 73vw;
+    background-color: #021530;
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        &_card {
+            width: 646px;
+            height: 803px;
+            flex-shrink: 0;
+            border-radius: 25px;
+            background: rgba(26, 45, 71, 0.30);
+            backdrop-filter: blur(20px);
+            img {
+                margin-top: 22px;
+                margin-left: 32px;
+            }
+            &_header {
+                color: #FFF;
+                font-family: Inter;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                width: 496px;
+                margin-left: 32px;
+                margin-top: 56px;
+            }
+            &_text {
+                width: 552px;
+                color: #9BA2B2;
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.14px;
+                margin-left: 32px;
+                margin-top: 43px;
+            }
+            &_last {
+                cursor: pointer;
+                color: #E03F3F;
+                font-family: Inter;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 190%;
+                letter-spacing: 0.6px;
+                text-transform: uppercase;
+                margin-left: 32px;
+                margin-top: 53px;
+            }
+        }
+    }
+}
