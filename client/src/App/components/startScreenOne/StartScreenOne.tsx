@@ -7,6 +7,7 @@ import '../../../font/fonts.css';
 const startScreenOne:React.FC = () => {
     return (
         <div className="startScreenOne">
+            <div className="startScreenOne_leerline"></div>
             <div className="startScreenOne_content">
                 <div className="startScreenOne_content_first">
                     <div className="startScreenOne_content_first_text">Explore what’s new with inletsky</div>

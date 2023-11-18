@@ -7,9 +7,9 @@ import { scopeBildArray, scopeHeaderArray, scopeTextArray } from "./scopeBild";
 const Scope:React.FC = () => {
     return (
         <div className="scope">
-            <div className="scope_first">
-                <div className="scope_first_rund"></div>
-                <div className="scope_first_text">Build A Success-Driven Development team to protect your</div>
+            <div className="scope_firstX">
+                <div className="scope_firstX_rund"></div>
+                <div className="scope_firstX_text">Build A Success-Driven Development team to protect your</div>
             </div>
             <div className="scope_header">Project Scope</div>
             <div className="scope_box">

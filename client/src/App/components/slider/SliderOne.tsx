@@ -16,10 +16,10 @@ const SliderOne:React.FC<SliderProps> = ({image01, firstText01, secondText01, th
     const [activeSecondText, setActiveSecondText] = useState(secondText01);
     const [activeThirdText, setActiveThirdText] = useState(thirdText01);
 
-    const handleDivClick = () => {
-        // Перенаправление на URL ссылки
-        window.location.href = '#';
-    };
+    // const handleDivClick = () => {
+    //     // Перенаправление на URL ссылки
+    //     window.location.href = '#';
+    // };
 
     function nachLinks() {
         if (activeSlide === image01) {
@@ -81,6 +81,10 @@ const SliderOne:React.FC<SliderProps> = ({image01, firstText01, secondText01, th
         }
     }
 
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
+
     return (
         <div className="sliderOne">
             <div className="sliderOne_silder">
@@ -102,10 +106,10 @@ const SliderOne:React.FC<SliderProps> = ({image01, firstText01, secondText01, th
 
                 <div className="sliderOne_content_header">{activeSecondText}</div>
                 <div className="sliderOne_content_text">{activeThirdText}</div>
-                <a href="#">
+                <a href="#" onClick={defaultLink}>
                     <div className="sliderOne_content_last">
                         <img src={explore} alt="button" />
-                        <div className="sliderOne_content_last_blur" onClick={handleDivClick}></div>
+                        <div className="sliderOne_content_last_blur" ></div>
                     </div>
                 </a>
 

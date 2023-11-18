@@ -6,6 +6,10 @@ import { logoArray } from './ourClientsLogo';
 
 const OurClients:React.FC = () => {
 
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
+
 
     return (
         <div className="ourClients">
@@ -39,7 +43,7 @@ const OurClients:React.FC = () => {
                 <img src={logoArray[13]} alt="logo014" />
                 <img src={logoArray[14]} alt="logo015" />
             </div>
-            <a href="#">
+            <a href="#" onClick={defaultLink}>
                 <div className="ourClients_bottomText">View customere stories  →</div>
                 <div className="ourClients_bottomText_blur">
                 </div>

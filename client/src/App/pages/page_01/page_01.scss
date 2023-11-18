@@ -1,0 +1,43 @@
+.page_01 {
+    background-color: #021530;
+    width: 99vw;
+    height: auto;
+    position: relative;
+    &_bg {
+        position: absolute;
+        left: 30%;
+        z-index: 0;
+        top: 2900px;
+    }
+    &_line {
+        margin-top: -12vh;
+        img {
+            width: 99vw;
+        }
+    }
+    &_slider {
+        margin-top: -20vh;
+
+    }
+    &_ourClients {
+        margin-top: 100px;
+    }
+    &_design {
+        margin-top: 100px;
+    }
+    &_testimotional {
+        margin-top: 100px;
+    }
+    &_vision {
+        margin-top: 100px;
+    }
+    &_faq {
+        margin-top: 100px;
+    }
+    &_ready {
+        margin-top: 100px;
+    }
+    &_footer {
+        margin-top: 100px;
+    }
+}

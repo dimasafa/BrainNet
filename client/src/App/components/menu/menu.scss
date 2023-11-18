@@ -1,10 +1,19 @@
 .menu {
     display: flex;
-    width: 100vw;
-    background-color: #492424;
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    position: fixed;
+    border-radius: 25px;
+    background: rgba(26, 45, 71, 0.30);
+    backdrop-filter: blur(20px);
+    z-index: 25;
     img {
         margin-top: 4vh;
         margin-left: 4vw;
+        cursor: pointer;
     }
     &_center {
         width: 463px;
@@ -21,6 +30,10 @@
         letter-spacing: 0.75px;
         text-transform: uppercase;
         a {
+            text-decoration: none;
+            color: #FFF;
+        }
+        &_one, &two {
             text-decoration: none;
             color: #FFF;
         }

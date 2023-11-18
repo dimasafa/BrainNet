@@ -1,9 +1,8 @@
 .sliderOne {
     position: relative;
-    background-color:rgb(140, 42, 165);
     &_silder {
         display: flex;
-        width: 100vw;
+        width: 99vw;
         overflow: hidden;
         &_links {
             // margin-left: -10%;
@@ -97,7 +96,7 @@
                 height: 43px;
                 position: absolute;
     
-                left: -1vw;
+                left: 6vw;
                 top: -1vh;
                 z-index: 5;
                 &:hover {

@@ -9,6 +9,10 @@ import { ReactComponent as LogoFour } from '../../sources/Page_01/10_bottom/logo
 import { ReactComponent as LogoFive } from '../../sources/Page_01/10_bottom/logo_05.svg';
 
 const Footer:React.FC = () => {
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
+
     return (
         <div className="footer">
             <div className="footer_firstBlock">
@@ -17,64 +21,64 @@ const Footer:React.FC = () => {
                     <div className="footer_firstBlock_column_one">
                         <div className="footer_firstBlock_column_one_title">Products</div>
                         <div className="footer_firstBlock_column_one_linkbox">
-                            <a href="#">Fleet</a>
-                            <a href="#">Address Autofill</a>
-                            <a href="#">Navigation SDK</a>
-                            <a href="#">Dash</a>
-                            <a href="#">Search</a>
-                            <a href="#">Maps</a>
-                            <a href="#">Mobile Maps SDK</a>
-                            <a href="#">Studio</a>
-                            <a href="#">Data</a>
-                            <a href="#">Vision</a>
-                            <a href="#">Atlas</a>
-                            <a href="#">—</a>
-                            <a href="#">Pricing</a>
+                            <a href="#" onClick={defaultLink}>Fleet</a>
+                            <a href="#" onClick={defaultLink}>Address Autofill</a>
+                            <a href="#" onClick={defaultLink}>Navigation SDK</a>
+                            <a href="#" onClick={defaultLink}>Dash</a>
+                            <a href="#" onClick={defaultLink}>Search</a>
+                            <a href="#" onClick={defaultLink}>Maps</a>
+                            <a href="#" onClick={defaultLink}>Mobile Maps SDK</a>
+                            <a href="#" onClick={defaultLink}>Studio</a>
+                            <a href="#" onClick={defaultLink}>Data</a>
+                            <a href="#" onClick={defaultLink}>Vision</a>
+                            <a href="#" onClick={defaultLink}>Atlas</a>
+                            <a href="#" onClick={defaultLink}>—</a>
+                            <a href="#" onClick={defaultLink}>Pricing</a>
                         </div>
 
                     </div>
                     <div className="footer_firstBlock_column_two">
                         <div className="footer_firstBlock_column_two_title">Resources</div>
                         <div className="footer_firstBlock_column_two_linkbox">
-                            <a href="#">Industries</a>
-                            <a href="#">Use Cases</a>
-                            <a href="#">How-to Videos</a>
-                            <a href="#">Webinars</a>
-                            <a href="#">Events</a>
+                            <a href="#" onClick={defaultLink}>Industries</a>
+                            <a href="#" onClick={defaultLink}>Use Cases</a>
+                            <a href="#" onClick={defaultLink}>How-to Videos</a>
+                            <a href="#" onClick={defaultLink}>Webinars</a>
+                            <a href="#" onClick={defaultLink}>Events</a>
                         </div>
                     </div>
                     <div className="footer_firstBlock_column_three">
                         <div className="footer_firstBlock_column_three_title">SUPPORT</div>
                         <div className="footer_firstBlock_column_three_linkbox">
-                            <a href="#">Help</a>
-                            <a href="#">Support Services</a>
-                            <a href="#">Documentation</a>
-                            <a href="#">Open source</a>
+                            <a href="#" onClick={defaultLink}>Help</a>
+                            <a href="#" onClick={defaultLink}>Support Services</a>
+                            <a href="#" onClick={defaultLink}>Documentation</a>
+                            <a href="#" onClick={defaultLink}>Open source</a>
                         </div>
                     </div>
                     <div className="footer_firstBlock_column_four">
                         <div className="footer_firstBlock_column_four_title">company</div>
                         <div className="footer_firstBlock_column_four_linkbox">
-                            <a href="#">About</a>
-                            <a href="#">Customers</a>
-                            <a href="#">Community</a>
-                            <a href="#">Careers</a>
-                            <a href="#">Sustainability</a>
-                            <a href="#">Diversity & Inclusion</a>
-                            <a href="#">Team</a>
-                            <a href="#">Blog</a>
-                            <a href="#">Press</a>
-                            <a href="#">Contact</a>
+                            <a href="#" onClick={defaultLink}>About</a>
+                            <a href="#" onClick={defaultLink}>Customers</a>
+                            <a href="#" onClick={defaultLink}>Community</a>
+                            <a href="#" onClick={defaultLink}>Careers</a>
+                            <a href="#" onClick={defaultLink}>Sustainability</a>
+                            <a href="#" onClick={defaultLink}>Diversity & Inclusion</a>
+                            <a href="#" onClick={defaultLink}>Team</a>
+                            <a href="#" onClick={defaultLink}>Blog</a>
+                            <a href="#" onClick={defaultLink}>Press</a>
+                            <a href="#" onClick={defaultLink}>Contact</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="footer_secondBlock">
                 <div className="footer_secondBlock_links">
-                    <a href="#">© Inletsky</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Security</a>
+                    <a href="#" onClick={defaultLink}>© Inletsky</a>
+                    <a href="#" onClick={defaultLink}>Terms</a>
+                    <a href="#" onClick={defaultLink}>Privacy</a>
+                    <a href="#" onClick={defaultLink}>Security</a>
                 </div>
                 <div className="footer_secondBlock_rechts">
                     <LogoOne />

@@ -9,6 +9,8 @@ import { designBildArray } from './designBild';
 
 
 const Design:React.FC = () => {
+
+
     return (
         <div className="design">
             <DesignLinks image={designBildArray[0]} firstText={firstArray[0]} header={headersArray[0]} text={textArray[0]} last={lastArray[0]}/>

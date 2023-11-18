@@ -2,7 +2,6 @@
     display: block;
     margin: 0 auto;
     width: 80vw;
-    background-color: #021530;
     &_content {
         display: flex;
         justify-content: space-between;
@@ -109,6 +108,7 @@
                         border-radius: 15px;
                         border: 2px solid #E03F3F;
                         background: #E03F3F;
+                        margin-left: -60px;
                         
                         color: #FFF;
                         font-family: Inter;

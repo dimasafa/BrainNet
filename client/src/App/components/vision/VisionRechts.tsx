@@ -11,6 +11,9 @@ interface VisionRechtsProps {
 }
 
 const VisionRechts:React.FC<VisionRechtsProps> = ({ image, firstText, header, text, last}) => {
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
     return (
         <div className="visionRechts">
             <img src={image} alt="photo" />
@@ -21,7 +24,7 @@ const VisionRechts:React.FC<VisionRechtsProps> = ({ image, firstText, header, te
                 </div>
                 <div className="visionRechts_content_header">{header}</div>
                 <div className="visionRechts_content_text">{text}</div>
-                <a href="#">
+                <a href="#" onClick={defaultLink}>
                     <div className="visionRechts_content_last">{last}</div>
                     <div className="visionRechts_content_last_blur"></div>
                 </a>

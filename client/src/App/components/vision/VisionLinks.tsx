@@ -10,6 +10,9 @@ interface VisionLinksProps {
 }
 
 const VisionLinks:React.FC<VisionLinksProps> = ({ image, firstText, header, text, last}) => {
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
     return (
         <div className="visionLinks">
             <div className="visionLinks_content">
@@ -19,7 +22,7 @@ const VisionLinks:React.FC<VisionLinksProps> = ({ image, firstText, header, text
                 </div>
                 <div className="visionLinks_content_header">{header}</div>
                 <div className="visionLinks_content_text">{text}</div>
-                <a href="#">
+                <a href="#" onClick={defaultLink}>
                     <div className="visionLinks_content_last">{last}</div>
                     <div className="visionLinks_content_last_blur"></div>
                 </a>

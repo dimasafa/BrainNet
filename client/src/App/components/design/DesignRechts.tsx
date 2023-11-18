@@ -11,6 +11,11 @@ interface DesignRechtsProps {
 }
 
 const DesignRechts:React.FC<DesignRechtsProps> = ({ image, firstText, header, text, last}) => {
+
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
+
     return (
         <div className="designRechts">
             <img src={image} alt="photo" />
@@ -21,7 +26,7 @@ const DesignRechts:React.FC<DesignRechtsProps> = ({ image, firstText, header, te
                 </div>
                 <div className="designRechts_content_header">{header}</div>
                 <div className="designRechts_content_text">{text}</div>
-                <a href="#">
+                <a href="#" onClick={defaultLink}>
                     <div className="designRechts_content_last">{last}</div>
                     <div className="designRechts_content_last_blur"></div>
                 </a>

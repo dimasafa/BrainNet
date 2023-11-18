@@ -1,7 +1,6 @@
 .analyze {
     display: block;
     margin: 0 auto;
-    background-color: #021530;
     width: 90vw;
     padding-top: 50px;
     &_first {
@@ -44,6 +43,7 @@
         display: flex;
         width: 100%;
         justify-content: space-between;
+        margin-top: 50px;
         &_one {
             margin-top: 50px;
         }

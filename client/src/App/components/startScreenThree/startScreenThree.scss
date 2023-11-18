@@ -1,5 +1,4 @@
 .startScreenThree {
-    background-color: #021530;
     height: 100vh;
     position: relative;
     z-index: -2;
@@ -9,7 +8,7 @@
         position: absolute;
         z-index: -1;
         img {
-            width: 100vw;
+            width: 99vw;
             height: auto;
             object-fit: cover;
         }

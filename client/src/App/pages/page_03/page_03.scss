@@ -1,0 +1,42 @@
+.page_03 {
+    background-color: #021530;
+    width: 99vw;
+    height: auto;
+    position: relative;
+    &_startScreen {
+        position: relative;
+        z-index: 1;
+    }
+    &_detection {
+        margin-top: 200px;
+    }
+    &_analyze {
+        margin-top: 100px;
+    }
+    &_standard {
+        position: relative;
+        z-index: 1;
+        margin-top: 100px;
+    }
+    &_ourPartner {
+        margin-top: 50px;
+        position: relative;
+        z-index: 1;
+    }
+    &_ai {
+        margin-top: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_reach {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_bild {
+        position: absolute;
+        top: 4250px;
+        left: 15%;
+    }
+}

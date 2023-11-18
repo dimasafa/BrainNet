@@ -1,7 +1,6 @@
 .development {
     display: block;
     margin: 0 auto;
-    background-color: #021530;
     width: 90vw;
     &_first {
         display: block;
@@ -125,5 +124,6 @@
         letter-spacing: 0.6px;
         text-transform: uppercase;
         margin-top: 60px;
+        cursor: pointer;
     }
 }

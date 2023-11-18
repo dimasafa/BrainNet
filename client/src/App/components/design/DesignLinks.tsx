@@ -10,6 +10,11 @@ interface DesignLinksProps {
 }
 
 const DesignLinks:React.FC<DesignLinksProps> = ({ image, firstText, header, text, last}) => {
+
+    const defaultLink = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
+    };
+
     return (
         <div className="designLinks">
             <div className="designLinks_content">
@@ -19,7 +24,7 @@ const DesignLinks:React.FC<DesignLinksProps> = ({ image, firstText, header, text
                 </div>
                 <div className="designLinks_content_header">{header}</div>
                 <div className="designLinks_content_text">{text}</div>
-                <a href="#">
+                <a href="#" onClick={defaultLink}>
                     <div className="designLinks_content_last">{last}</div>
                     <div className="designLinks_content_last_blur"></div>
                 </a>

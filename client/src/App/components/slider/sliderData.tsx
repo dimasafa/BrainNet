@@ -7,8 +7,8 @@ import sliderFive from '../../sources/Page_02/06_portfolio/bild_02.png';
 import sliderSix from '../../sources/Page_02/06_portfolio/bild_03.png';
 
 import sliderSeven from '../../sources/Page_04/03_slider/Bild_01.png';
-import sliderEight from '../../sources/Page_04/03_slider/Bild_02.png';
-import sliderNine from '../../sources/Page_04/03_slider/Bild_03.png';
+import sliderEight from '../../sources/Page_04/03_slider/pic.png';
+import sliderNine from '../../sources/Page_04/03_slider/bild.png';
 
 export const sliderBildArray = [sliderOne, sliderTwo, sliderThree, sliderFour, sliderFive, sliderSix, sliderSeven, sliderEight, sliderNine];
 

@@ -2,12 +2,11 @@
     display: block;
     width: 90vw;
     margin: 0 auto;
-    background-color: #021530;
     &_first {
         display: block;
         margin: 0 auto;
         display: flex;
-        width: 240px;
+        width: 260px;
         height: 24px;
         border: 2px solid #E03F3F;
         border-radius: 15px;
@@ -200,7 +199,7 @@
             }
         }
         &_checkbox {
-            margin-left: 170px;
+            margin-left: -70vw;
             margin-top: 33px;
         }
     }

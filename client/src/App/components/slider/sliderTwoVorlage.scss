@@ -1,13 +1,12 @@
 .sliderTwoVorlage {
     display: block;
     margin: 0 auto;
-    background-color: #021530;
     width: 80vw;
-    &_first {
+    &_firstQ {
         display: block;
         margin: 0 auto;
         display: flex;
-        width: 240px;
+        width: 140px;
         height: 24px;
         border: 2px solid #E03F3F;
         border-radius: 15px;

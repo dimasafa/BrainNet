@@ -1,0 +1,31 @@
+.page_02 {
+    background-color: #021530;
+    width: 99vw;
+    height: auto;
+    position: relative;
+    &_innovative {
+        padding-top: 20vh;
+    }
+    &_development {
+        margin-top: 100px;
+    }
+    &_technologies {
+        margin-top: 100px;
+    }
+    &_scope {
+        margin-top: 100px;
+    }
+    &_appdev {
+        margin-top: 100px;
+    }
+    &_sliderTwoVorlage {
+        margin-top: 100px;
+    }
+    &_faq {
+        margin-top: 100px;
+    }
+    &_form {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+}

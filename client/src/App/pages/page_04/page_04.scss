@@ -1,0 +1,47 @@
+.page_04 {
+    background-color: #021530;
+    width: 99vw;
+    height: auto;
+    position: relative;
+    &_startFour {
+        padding-top: 200px;
+        position: relative;
+        z-index: 1;
+    }
+    &_cost {
+        margin-top: 200px;
+        position: relative;
+        z-index: 1;
+    }
+    &_business {
+        margin-top: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_sliderVorlageThree {
+        margin-top: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_sliderThree {
+        position: relative;
+        z-index: 1;
+    }
+    &_twobild {
+        margin-top: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_form {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        position: relative;
+        z-index: 1;
+    }
+    &_bg {
+        position: absolute;
+        left: 15%;
+        top: 4300px;
+        z-index: 0;
+    }
+}

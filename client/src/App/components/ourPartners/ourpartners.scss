@@ -2,7 +2,6 @@
     display: block;
     margin: 0 auto;
     width: 90vw;
-    background-color: #021530;
     &_line {
         display: block;
         width: 0.5px;
@@ -57,5 +56,6 @@
         text-transform: uppercase;
         text-align: center;
         margin-top: 100px;
+        cursor: pointer;
     }
 }

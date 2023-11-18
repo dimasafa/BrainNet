@@ -10,13 +10,15 @@ const Testimotional:React.FC = () => {
 
     const scrollRef = useRef<HTMLDivElement>(null);
 
-    const scrollLeft = () => {
+    const scrollLeft = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
         if (scrollRef.current) {
             scrollRef.current.scrollBy({ left: -500, behavior: 'smooth' });
         }
     }
 
-    const scrollRight = () => {
+    const scrollRight = (event: React.MouseEvent<HTMLAnchorElement>) => {
+        event.preventDefault(); 
         if (scrollRef.current) {
             scrollRef.current.scrollBy({ left: 500, behavior: 'smooth' });
         }
@@ -36,7 +38,7 @@ const Testimotional:React.FC = () => {
                 <CardBox scrollRef={scrollRef}/>
             </div>
             <div className="cards_buttons">
-                <a href="#" onClick={scrollLeft}>
+                <a href="#" onClick={scrollLeft} >
                     <div className="cards_buttons_links">
                         <div className="cards_buttons_links_rund"></div>
                         <div className="cards_buttons_links_img">
