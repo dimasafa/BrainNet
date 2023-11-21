@@ -1,5 +1,9 @@
 .footer {
     padding-bottom: 50px;
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+    &_invisible {
+        opacity: 0;
+    }
     &_firstBlock {
         display: block;
         margin: 0 auto;

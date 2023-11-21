@@ -1,9 +1,15 @@
 .startScreenFour {
     display: block;
     margin: 0 auto;
-    
     position: relative;
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 2s ease-in-out, opacity 2s ease-in-out;
     height: 90vh;
+    &_invisible {
+        transform: translateY(300px);
+        opacity: 0;
+    }
     &_first {
         width: 80vw;
         display: block;

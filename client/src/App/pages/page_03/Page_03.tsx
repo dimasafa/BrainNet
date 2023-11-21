@@ -13,7 +13,7 @@ import Footer from '../../components/footer/Footer';
 import bild from '../../sources/Page_03/bg_02.png'
 
 
-const Page_03:React.FC = () => {
+const PageThree:React.FC = () => {
     return (
         <div className="page_03">
             <div className="page_03_menu"><Menu /></div>
@@ -33,4 +33,4 @@ const Page_03:React.FC = () => {
 }
 
 
-export default Page_03;
+export default PageThree;

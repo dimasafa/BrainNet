@@ -11,6 +11,13 @@
         border: 2px solid #E03F3F;
         border-radius: 15px;
         align-items: center;
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+            transform: translateY(50px);
+        }
         &_rund {
             display: block;
             width: 7.397px;
@@ -39,6 +46,13 @@
         font-style: normal;
         font-weight: 700;
         line-height: 92px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+            transform: translateX(-150px);
+        }
     }
     &_text {
         color: #9BA2B2;
@@ -50,6 +64,13 @@
         line-height: 32px;
         letter-spacing: -0.14px;
         margin-top: 10px;
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+            transform: translateX(150px);
+        }
     }
     &_form {
         display: block;
@@ -60,6 +81,13 @@
         background: rgba(26, 45, 71, 0.30);
         backdrop-filter: blur(20px);
         margin-top: 52px;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+            transform: translateX(100px);
+        }
         &_name {
             display: block;
             margin: 0 auto;

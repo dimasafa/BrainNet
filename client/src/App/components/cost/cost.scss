@@ -1,13 +1,18 @@
 .cost {
     display: block;
     margin: 0 auto;
-    width: 80vw;
+    width: 90vw;
     &_content {
         display: flex;
         justify-content: space-between;
         width: 100%;
         &_links {
             width: 872px;
+            transform: rotateY(0grad);
+            transition: transform 2s ease-in-out;
+            &_invisible {
+                transform: rotateY(90grad);
+            }
             &_first {
                 display: block;
                 margin: 0 auto;
@@ -60,6 +65,11 @@
             border-radius: 25px;
             background: rgba(26, 45, 71, 0.30);
             backdrop-filter: blur(20px);
+            transform: rotateY(0grad);
+            transition: transform 2s ease-in-out;
+            &_invisible {
+                transform: rotateY(90grad);
+            }
             &_header {
                 width: 334px;
                 color: #FFF;

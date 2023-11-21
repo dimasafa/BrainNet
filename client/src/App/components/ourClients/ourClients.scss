@@ -5,6 +5,13 @@
     &_content {
         display: block;
         padding-top: 58px;
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
         &_first {
             display: block;
             margin: 0 auto;
@@ -46,9 +53,16 @@
     }
 
     &_lineOne, &_lineTwo, &_lineThree {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); // Подберите подходящее количество колонок
+        gap: 10px;
+        &_logone, &_logtwo, &_logthree, &_logfour, &_logfive, &_logsix, &_logseven, &_logeight, &_lognine, &_logten, &_logeleven, &_logtwelve, &_logthirteen, &_logfourteen, &_logfifteen {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            &_invisible {
+                opacity: 0;
+            }
+        }
     }
     &_lineOne {
         margin-top: 110px;
@@ -58,6 +72,15 @@
     }
     a {
         text-decoration: none;
+    }
+    &_bottom {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+        &_invisible {
+            transform: translateY(30px);
+            opacity: 0;
+        }
     }
     &_bottomText {
         margin-top: 100px;
@@ -75,7 +98,7 @@
             position: absolute;
             width: 220px;
             height: 35px;
-            left: 44%;
+            left: 42%;
             z-index: 5;
             margin-top: -30px;
             &:hover {

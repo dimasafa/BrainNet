@@ -14,7 +14,7 @@ import Form from '../../components/form/Form';
 import Footer from '../../components/footer/Footer';
 
 
-const Page_02:React.FC = () => {
+const PageTwo:React.FC = () => {
     return (
         <div className="page_02">
             <div className="page_02_menu"><Menu /></div>
@@ -35,4 +35,4 @@ const Page_02:React.FC = () => {
     )
 }
 
-export default Page_02;
+export default PageTwo;

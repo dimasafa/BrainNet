@@ -1,11 +1,30 @@
 .twoBild {
     display: block;
     margin: 0 auto;
-    width: 73vw;
+    width: 80vw;
     &_content {
         display: flex;
         justify-content: space-between;
-        &_card {
+        &_cardOne {
+            opacity: 1;
+            transform: translateX(0);
+            transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+            &_invisible {
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+        }
+        &_cardTwo {
+            opacity: 1;
+            transform: translateX(0);
+            transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+            &_invisible {
+                transform: translateX(100px);
+                opacity: 0;
+            }
+        }
+        &_cardOne, &_cardTwo {
+
             width: 646px;
             height: 803px;
             flex-shrink: 0;
@@ -14,7 +33,7 @@
             backdrop-filter: blur(20px);
             img {
                 margin-top: 22px;
-                margin-left: 32px;
+                margin-left: 0px;
             }
             &_header {
                 color: #FFF;

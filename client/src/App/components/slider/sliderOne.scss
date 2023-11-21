@@ -1,5 +1,15 @@
 .sliderOne {
     position: relative;
+    &_animation {
+        transform: scale(1);
+        transform: rotateX(0grad);
+        transition: transform 3s ease-in-out, opacity 3s ease-in-out, scale 3s ease-in-out;
+        &_invisible {
+            transform: scale(0.1);
+            transform: rotateX(90grad);
+            opacity: 0;
+        }
+    }
     &_silder {
         display: flex;
         width: 99vw;

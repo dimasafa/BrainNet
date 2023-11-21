@@ -4,6 +4,13 @@
     &_box {
         display: flex;
         width: 80%;
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            transform: translateX(-200px);
+            opacity: 0;
+        }
         &_verLine {
             display: block;
             width: 3px;
@@ -44,5 +51,9 @@
         background: #E03F3F;
         margin-left: 483px;
         margin-top: 10px;
+        transition: transform 2s ease-in-out, opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+        }
     }
 }

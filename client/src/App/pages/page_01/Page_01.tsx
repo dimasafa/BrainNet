@@ -15,7 +15,7 @@ import Footer from '../../components/footer/Footer';
 import bg from '../../sources/Page_01/bg.png';
 import line from '../../sources/Page_01/02_start/lineUnten.png';
 
-const Page_01:React.FC = () => {
+const PageOne:React.FC = () => {
     return (
         <div className="page_01">
             <div className="page_01_bg">
@@ -42,4 +42,4 @@ const Page_01:React.FC = () => {
     )
 }
 
-export default Page_01;
+export default PageOne;
