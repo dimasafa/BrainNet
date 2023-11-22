@@ -5,6 +5,12 @@
     width: 80vw;
     background: url('../../sources/Page_02/05_app/bg.png') center center/cover no-repeat;
     border-radius: 20px;
+
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    &_invisible {
+        opacity: 0;
+    }
     &_line {
         display: block;
         height: 0.5px;

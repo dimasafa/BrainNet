@@ -14,8 +14,12 @@ import Footer from '../../components/footer/Footer';
 
 import bg from '../../sources/Page_01/bg.png';
 import line from '../../sources/Page_01/02_start/lineUnten.png';
+import { useEffect } from 'react';
 
 const PageOne:React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="page_01">
             <div className="page_01_bg">

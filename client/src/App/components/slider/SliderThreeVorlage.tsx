@@ -42,9 +42,7 @@ const SliderThreeVorlage:React.FC = () => {
                         <div className="sliderThreeVorlage_text">With no need to restrict applications or workloads to one type of business cloud solution, organisations are adopting our Hybrid and Multi-Cloud model because it delivers a fluid mix of cloud computing solutions with exceptional business outcomes.</div>
                     </>
                 }
-
             </div>
-
         </div>
     )
 }

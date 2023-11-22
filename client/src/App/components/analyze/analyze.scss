@@ -12,6 +12,14 @@
         border: 2px solid #E03F3F;
         border-radius: 15px;
         align-items: center;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
         &_text {
             display: block;
             margin: 0 auto;
@@ -25,9 +33,19 @@
         }
     }
     &_header {
-        display: flex;
-        justify-content: center;
+        display: block;
+        margin: 0 auto;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
         &_text {
+            display: block;
+            margin: 0 auto;
             width: 60%;
             margin-top: 25px;
             color: #FFF;
@@ -36,7 +54,8 @@
             font-style: normal;
             font-weight: 700;
             line-height: 92px;
-            margin-left: 15%;
+
+
         }
     }
     &_box {
@@ -44,8 +63,25 @@
         width: 100%;
         justify-content: space-between;
         margin-top: 50px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); // Подберите подходящее количество колонок
+        gap: 10px;
         &_one {
             margin-top: 50px;
+
+            opacity: 1;
+            transition: opacity 2s ease-in-out;
+            &_invisible {
+                opacity: 0;
+            }
+        }
+        &_two {
+            opacity: 1;
+            transition: opacity 2s ease-in-out;
+            &_invisible {
+                opacity: 0;
+            }
         }
         &_card {
             display: block;
@@ -98,5 +134,13 @@
         letter-spacing: 0.6px;
         text-transform: uppercase;
         margin-top: 50px;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
     }
 }

@@ -2,6 +2,12 @@
     display: block;
     margin: 0 auto;
     width: 80vw;
+
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+    &_invisible {
+        opacity: 0;
+    }
     &_lineHoch, &_lineBottom {
         display: block;
         width: 100%;
@@ -41,6 +47,7 @@
         font-weight: 400;
         line-height: 32px;
         letter-spacing: -0.14px;
+        text-align: left;
     }
     &_lineBottom {
         margin-top: 30px;

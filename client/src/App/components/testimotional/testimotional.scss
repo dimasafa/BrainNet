@@ -8,6 +8,16 @@
     background: rgba(26, 45, 71, 0.30);
 
     backdrop-filter: blur(20px);
+
+    opacity: 1;
+    filter: none;
+    transition: filter 2s ease-in-out, opacity 2s ease-in-out;
+    &_invisible {
+        filter: grayscale(100%); // начальный эффект (черно-белый)
+        opacity: 0;
+    }
+
+
     &_margin {
         padding-top: 28px;
     }

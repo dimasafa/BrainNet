@@ -3,6 +3,8 @@
     margin: 0 auto;
     width: 80vw;
     &_content {
+        display: block;
+        margin: 0 auto;
         transform: scale(1);
         transition: transform 2s ease-in-out, opacity 2s ease-in-out, scale 3s ease-in-out;
         width: 88%;

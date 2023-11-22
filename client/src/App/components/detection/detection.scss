@@ -1,13 +1,19 @@
 .detection {
     display: block;
     margin: 0 auto;
-    width: 90vw;
+    width: 80vw;
     &_content {
         display: flex;
         width: 100%;
         justify-content: space-between;
         padding-top: 50px;
         &_left {
+            transform: translateY(0px);
+            transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+            &_invisible {
+                transform: translateY(160px);
+                opacity: 0;
+            }
             &_first {
                 display: flex;
                 width: 163px;
@@ -35,10 +41,12 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: 92px;
-                width: 60%;
+                width: 80%;
                 margin-top: 15px;
+                text-align: left;
             }
             img {
+                display: block;
                 margin-top: 50px;
             }
             &_text {
@@ -49,7 +57,16 @@
                 font-weight: 500;
                 line-height: normal;
                 margin-top: 30px;
-                width: 51%;
+                width: 70%;
+                text-align: left;
+            }
+        }
+        &_right {
+            transform: translateX(0px);
+            transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+            &_invisible {
+                transform: translateX(160px);
+                opacity: 0;
             }
         }
     }

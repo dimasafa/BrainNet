@@ -11,9 +11,13 @@ import Reach from '../../components/reach/Reach';
 import Footer from '../../components/footer/Footer';
 
 import bild from '../../sources/Page_03/bg_02.png'
+import { useEffect } from 'react';
 
 
 const PageThree:React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="page_03">
             <div className="page_03_menu"><Menu /></div>

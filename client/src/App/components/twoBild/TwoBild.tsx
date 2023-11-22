@@ -15,7 +15,7 @@ const TwoBild:React.FC = () => {
             const elementTop = componentRef.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight - 20) {
+            if (elementTop < windowHeight - 200) {
                 setIsVisible(true);
                 setHasBeenVisible(true);
             }

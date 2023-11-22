@@ -3,11 +3,9 @@
     display: block;
     margin: 0 auto;
     &_content {
-/*         transform: rotateY(0grad); */
         opacity: 1;
-        transition: /* transform 2s ease-in-out, */ opacity 4s ease-in-out;
+        transition: opacity 4s ease-in-out;
         &_invisible {
-/*             transform: rotateY(90grad); */
             opacity: 0;
         }
     }

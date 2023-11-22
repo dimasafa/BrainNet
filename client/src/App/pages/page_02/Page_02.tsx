@@ -12,9 +12,13 @@ import Slider from '../../components/slider/Slider';
 import Faq from '../../components/faq/Faq';
 import Form from '../../components/form/Form';
 import Footer from '../../components/footer/Footer';
+import { useEffect } from 'react';
 
 
 const PageTwo:React.FC = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className="page_02">
             <div className="page_02_menu"><Menu /></div>

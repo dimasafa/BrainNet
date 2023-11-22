@@ -1,6 +1,6 @@
 import './faqBlock.scss';
 import kreuz from '../../sources/Page_01/08_faq/kreuz.svg';
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 interface FaqProps {
     frage: string;
@@ -26,15 +26,44 @@ const FaqBlock:React.FC<FaqProps> = ({frage, antwort}) => {
         }
     }
 
+    const [isVisible, setIsVisible] = useState(false);
+    const [hasBeenVisible, setHasBeenVisible] = useState(false);
+    const componentRef = useRef<HTMLDivElement | null>(null);
+
+    const handleScroll = () => {
+        if (componentRef.current && !hasBeenVisible) {
+            const elementTop = componentRef.current.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (elementTop < windowHeight - 120) {
+                setIsVisible(true);
+                setHasBeenVisible(true);
+            }
+
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [hasBeenVisible]); 
+
     return (
-        <div className="faqBlock" style={bg}>
-            <div className="faqBlock_lineHoch"></div>
-            <div className="faqBlock_lineOne">
-                <div className="faqBlock_lineOne_frage">{frage}</div>
-                <img src={kreuz} alt="kreuz" onClick={trigger}/>
-            </div>
-            <div className="faqBlock_antwort" style={disp}>{antwort}</div>
-            <div className="faqBlock_lineBottom"></div>
+        <div className={`faqBlock ${isVisible ? 'faqBlock' : 'faqBlock_invisible'}`} ref={componentRef} style={bg}>
+            {isVisible && 
+                <>
+                    <div className="faqBlock_lineHoch"></div>
+                    <div className="faqBlock_lineOne">
+                        <div className="faqBlock_lineOne_frage">{frage}</div>
+                        <img src={kreuz} alt="kreuz" onClick={trigger}/>
+                    </div>
+                    <div className="faqBlock_antwort" style={disp}>{antwort}</div>
+                    <div className="faqBlock_lineBottom"></div>
+                </>
+            }
         </div>
     )
 }

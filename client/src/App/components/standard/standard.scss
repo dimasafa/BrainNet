@@ -13,14 +13,30 @@
         background: rgba(26, 45, 71, 0.30);
         margin-top: 44px;
         z-index: -1;
+
+        opacity: 1;
+        transition: opacity 2s ease-in-out;
+        &_invisible {
+            opacity: 0;
+        }
     }
     &_content {
         display: block;
         margin: 0 auto;
-        width: 90vw;
+        width: 85vw;
         display: flex;
         margin-top: -900px;
         z-index: 2;
+        &_links {
+            transform: translateY(0px);
+            transform: translateX(0px);
+            opacity: 1;
+            transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+            &_invisible {
+                transform: translate(-150px, -100px);
+                opacity: 0;
+            }
+        }
         &_rechts {
             margin-top: 197px;
             &_first {
@@ -33,6 +49,14 @@
                 border: 2px solid #E03F3F;
                 border-radius: 15px;
                 align-items: center;
+
+                transform: translateY(0px);
+                opacity: 1;
+                transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+                &_invisible {
+                    transform: translateY(100px);
+                    opacity: 0;
+                }
                 &_text {
                     display: block;
                     margin: 0 auto;
@@ -48,7 +72,7 @@
             &_header {
                     display: block;
                     margin-left: auto;
-                    width: 70%;
+                    width: 90%;
                     margin-top: 25px;
                     color: #FFF;
                     font-family: Inter;
@@ -57,6 +81,14 @@
                     font-weight: 700;
                     line-height: 92px;
                     text-align: right;
+
+                    transform: translateY(0px);
+                    opacity: 1;
+                    transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+                    &_invisible {
+                        transform: translateY(100px);
+                        opacity: 0;
+                    }
             }
             &_text {
                 display: block;
@@ -70,6 +102,14 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 150.023%;
+
+                transform: translateY(0px);
+                opacity: 1;
+                transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+                &_invisible {
+                    transform: translateY(100px);
+                    opacity: 0;
+                }
             }
         }
     }
@@ -86,5 +126,13 @@
         margin-top: 88px;
         cursor: pointer;
         z-index: 5;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out , opacity 2s ease-in-out;
+        &_invisible {
+            transform: translateY(50px);
+            opacity: 0;
+        }
     }
 }

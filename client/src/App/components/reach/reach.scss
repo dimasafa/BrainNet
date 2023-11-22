@@ -4,6 +4,11 @@
     width: 90vw;
     padding-top: 50px;
 
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    &_invisible {
+        opacity: 0;
+    }
     &_content {
         display: block;
         height: 447px;

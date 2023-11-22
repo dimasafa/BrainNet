@@ -111,7 +111,7 @@ const DesignLinks:React.FC<DesignLinksProps> = ({ image, firstText, header, text
                             {text}
                         </>
                     }
-                    </div>
+                </div>
                     
                 <a href="#" onClick={defaultLink}>
 
@@ -122,7 +122,7 @@ const DesignLinks:React.FC<DesignLinksProps> = ({ image, firstText, header, text
                             </>
                         }
                         
-                        </div>
+                    </div>
                     <div className="designLinks_content_last_blur"></div>
                 </a>
                 

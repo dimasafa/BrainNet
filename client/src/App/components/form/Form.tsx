@@ -25,7 +25,7 @@ const Form:React.FC = () => {
             const elementTop = componentRef.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight - 20) {
+            if (elementTop < windowHeight - 120) {
                 setIsVisible(true);
                 setHasBeenVisible(true);
             }
@@ -34,7 +34,7 @@ const Form:React.FC = () => {
             const elementTop = componentReftwo.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight - 20) {
+            if (elementTop < windowHeight - 120) {
                 setIsVisibletwo(true);
                 setHasBeenVisibletwo(true);
             }
@@ -43,7 +43,7 @@ const Form:React.FC = () => {
             const elementTop = componentRefthree.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight - 20) {
+            if (elementTop < windowHeight - 120) {
                 setIsVisiblethree(true);
                 setHasBeenVisiblethree(true);
             }
@@ -52,7 +52,7 @@ const Form:React.FC = () => {
             const elementTop = componentReffour.current.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
 
-            if (elementTop < windowHeight - 20) {
+            if (elementTop < windowHeight - 120) {
                 setIsVisiblefour(true);
                 setHasBeenVisiblefour(true);
             }

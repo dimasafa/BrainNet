@@ -1,6 +1,6 @@
 import './designRechts.scss';
 import '../../../font/fonts.css';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 
 interface DesignRechtsProps {
@@ -78,18 +78,60 @@ const DesignRechts:React.FC<DesignRechtsProps> = ({ image, firstText, header, te
         }
     };
 
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [hasBeenVisible]); 
+
     return (
         <div className="designRechts">
-            <img src={image} alt="photo" />
+            <div className={`designRechts_photo ${isVisibletwo ? 'designRechts_photo' : 'designRechts_photo_invisible'}`} ref={componentReftwo}>
+                {isVisibletwo && 
+                    <>
+                        <img src={image} alt="photo" />
+                    </>
+                }
+            </div>
+
             <div className="designRechts_content">
-                <div className="designRechts_content_first">
-                    <div className="designRechts_content_first_rund"></div>
-                    <div className="designRechts_content_first_text">{firstText}</div>
+                <div className={`designRechts_content_first ${isVisible ? 'designRechts_content_first' : 'designRechts_content_first_invisible'}`} ref={componentRef}>
+                {isVisible && 
+                    <>
+                        <div className="designRechts_content_first_rund"></div>
+                        <div className="designRechts_content_first_text">{firstText}</div>
+                    </>
+                }
                 </div>
-                <div className="designRechts_content_header">{header}</div>
-                <div className="designRechts_content_text">{text}</div>
+
+                <div className={`designRechts_content_header ${isVisible ? 'designRechts_content_header' : 'designRechts_content_header_invisible'}`} ref={componentRef}>
+                {isVisible && 
+                    <>
+                        {header}
+                    </>
+                }
+                </div>
+
+                <div className={`designRechts_content_text ${isVisiblethree ? 'designRechts_content_text' : 'designRechts_content_text_invisible'}`} ref={componentRefthree}>
+                    {isVisiblethree && 
+                        <>
+                            {text}
+                        </>
+                    }
+                </div>
+
                 <a href="#" onClick={defaultLink}>
-                    <div className="designRechts_content_last">{last}</div>
+
+                    <div className={`designRechts_content_last ${isVisiblefour ? 'designRechts_content_last' : 'designRechts_content_last_invisible'}`} ref={componentReffour}>
+                            {isVisiblefour&& 
+                                <>
+                                    {last}
+                                </>
+                            }
+                            
+                    </div>
                     <div className="designRechts_content_last_blur"></div>
                 </a>
             </div>

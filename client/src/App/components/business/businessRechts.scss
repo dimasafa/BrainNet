@@ -4,10 +4,11 @@
     &_box {
         display: flex;
         justify-content: end;
+        width: 88%;
+
         opacity: 1;
         transform: translateX(0);
         transition: transform 2s ease-in-out, opacity 2s ease-in-out;
-        width: 88%;
         &_invisible {
             transform: translateX(200px);
             opacity: 0;
@@ -54,6 +55,8 @@
         background: #E03F3F;
         margin-left: 483px;
         margin-top: 10px;
+        
+        opacity: 1;
         transition: transform 2s ease-in-out, opacity 2s ease-in-out;
         &_invisible {
             opacity: 0;

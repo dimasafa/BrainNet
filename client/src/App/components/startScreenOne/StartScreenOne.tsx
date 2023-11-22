@@ -27,8 +27,10 @@ const StartScreenOne:React.FC = () => {
             }, 500)
             setTimeout(() => {
                 setContentStylethree('startScreenOne_content_third');
-                setContentStylefour('startScreenOne_content_forth');
             }, 800)
+            setTimeout(() => {
+                setContentStylefour('startScreenOne_content_forth');
+            }, 1300)
         }
     }, [boxInView]);
 

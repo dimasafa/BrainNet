@@ -18,6 +18,14 @@
         align-items: center;
         justify-content: center;
         margin-top: 112px;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
         &_text {
             color: #FFF;
             font-family: Inter;
@@ -37,12 +45,30 @@
         font-style: normal;
         font-weight: 700;
         line-height: 92px;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
     }
     &_logoBox {
         margin-top: 100px;
         display: flex;
         width: 100%;
         justify-content: space-around;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); // Подберите подходящее количество колонок
+        gap: 10px;
+        &_1, &_2, &_3, &_4, &_5 {
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            &_invisible {
+                opacity: 0;
+            }
+        }
 
     } 
     &_last {
@@ -57,5 +83,13 @@
         text-align: center;
         margin-top: 100px;
         cursor: pointer;
+
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 2s ease-in-out, opacity 1s ease-in-out;
+        &_invisible {
+            transform: translateY(80px);
+            opacity: 0;
+        }
     }
 }

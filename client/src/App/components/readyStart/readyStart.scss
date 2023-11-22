@@ -5,6 +5,12 @@
     width: 80vw;
     background: url('../../sources/Page_01/09_ready/bd.png') center center/cover no-repeat;
     border-radius: 20px;
+
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+    &_invisible {
+        opacity: 0;
+    }
     &_line {
         display: block;
         height: 0.5px;
@@ -19,6 +25,8 @@
         border-radius: 15px;
         align-items: center;
         margin-top: 70px;
+
+
         &_rund {
             display: block;
             width: 7.397px;
